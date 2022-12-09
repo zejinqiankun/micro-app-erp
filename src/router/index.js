@@ -21,7 +21,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: window.__POWERED_BY_QIANKUN__ ? '/app-erp' : process.env.BASE_URL,
+  base: window.__POWERED_BY_QIANKUN__ ? '/app/app-erp' : process.env.BASE_URL,
   routes
 })
 
