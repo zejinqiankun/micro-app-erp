@@ -16,6 +16,14 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/userManage.vue')
+  },
+  {
+    path: '/*',
+    name: '404',
+    component: () => import('../views/errorPage/404.vue'),
+    meta: {
+      notRequireAuth: true
+    }
   }
 ]
 
